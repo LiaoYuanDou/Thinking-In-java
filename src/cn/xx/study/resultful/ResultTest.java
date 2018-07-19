@@ -30,19 +30,19 @@ public class ResultTest {
 		map.put("userInfoList", list);
 		// result.setResult_data(map);
 
-		Result result = Result.setResult(0, map);
+		Result result = Result.setResult(0, list);
 		System.out.println(result);
 
-		Result result1 = Result.setResult(1, map);
+		Result result1 = Result.setResult(1, list);
 		System.out.println(result1);
 
-		Result result2 = Result.setResult(-1, map);
+		Result result2 = Result.setResult(-1, list);
 		System.out.println(result2);
 
-		Result result3 = Result.setResult(3, "其他错误", map);
+		Result result3 = Result.setResult(3, "其他错误", list);
 		System.out.println(result3);
 		
-		Result result4 = Result.setResult(0, "错误", map);
+		Result result4 = Result.setResult(0, "错误", list);
 		System.out.println(result4);
 
 	}
